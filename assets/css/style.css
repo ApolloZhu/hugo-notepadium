@@ -95,7 +95,6 @@ samp {
   font-family: Menlo, Consolas, 'Liberation Mono', monospace;
   font-weight: 400;
   font-size: 85%;
-  white-space: nowrap;
 }
 
 pre {
@@ -318,10 +317,6 @@ acronym {
 .nav.item:hover {
   opacity: .5;
   text-decoration: none;
-}
-
-.note.list ul {
-  margin-left: 20px;
 }
 
 .tag:hover,
@@ -603,15 +598,17 @@ acronym {
   content: "\275E";
 }
 
+.note.list ol,
+.note.list ul,
 .article.markdown-body ol,
 .article.markdown-body ul {
   margin-bottom: 20px;
   margin-block-end: 20px;
   -webkit-margin-after: 20px;
 
-  padding-inline-start: 20px;
-  -webkit-padding-start: 20px;
-  padding-left: 20px;
+  padding-inline-start: 40px;
+  -webkit-padding-start: 40px;
+  padding-left: 40px;
 }
 
 .article.markdown-body hr {
@@ -654,6 +651,10 @@ acronym {
 
 .article.markdown-body .plstable th {
   max-width: 25%;
+}
+
+.article.markdown-body li+li {
+  margin-top: 20px;
 }
 
 .article.markdown-body>*,
