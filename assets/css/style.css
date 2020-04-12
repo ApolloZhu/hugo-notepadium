@@ -620,20 +620,25 @@ acronym {
   border-top-color: inherit;
 }
 
+.note.list table,
 .article.markdown-body table {
   display: block;
   width: 100%;
   overflow: auto;
 }
 
+.note.list table tr,
 .article.markdown-body table tr {
   border: 0;
 }
 
+.note.list table th,
 .article.markdown-body table th {
   font-weight: 700;
 }
 
+.note.list table td,
+.note.list table th,
 .article.markdown-body table td,
 .article.markdown-body table th {
   min-width: 86px;
@@ -641,6 +646,7 @@ acronym {
   border: 1px solid #e6e6e6;
 }
 
+.note.list table th:empty,
 .article.markdown-body table th:empty {
   padding: 0;
   border: 0;
