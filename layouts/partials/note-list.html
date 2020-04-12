@@ -6,7 +6,7 @@
 <ul class="note list">
     {{- range $paginator.Pages -}}
     <li class="item"><a class="note" href="{{- replace .RelPermalink "#" "%23" -}}">
-            <p class="note title">{{- .Title | safeHTML -}}</p>
+            <p class="note title">{{- .Title | markdownify | safeHTML -}}</p>
             {{- if .Date -}}
                 <p class="note date">{{- .Date.Format $dateFormat -}}</p>
             {{- end -}}
