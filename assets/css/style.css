@@ -319,6 +319,10 @@ acronym {
   text-decoration: none;
 }
 
+.note.list ul {
+  list-style-position: inside;
+}
+
 .tag:hover,
 .category:hover {
   opacity: .5;
