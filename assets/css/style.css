@@ -320,7 +320,7 @@ acronym {
 }
 
 .note.list ul {
-  list-style-position: inside;
+  margin-left: 20px;
 }
 
 .tag:hover,
