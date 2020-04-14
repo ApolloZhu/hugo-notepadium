@@ -5,7 +5,7 @@
 <meta name="supported-color-schemes" content="light dark">
 
 {{- define "title" -}}
-    {{- $title := .Title -}}
+    {{- $title := .Title | markdownify | plainify -}}
     {{- if and (ne $title "") (ne $title site.Title) -}}
         <title>{{- $title | safeHTML -}} &nbsp;&ndash;&nbsp; {{- site.Title | safeHTML -}}</title>
     {{- else -}}
